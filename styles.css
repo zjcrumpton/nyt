@@ -1,10 +1,12 @@
 body {
-  background-color: #f7f7f7;
+  background-color: white;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
 }
 
 #article {
   background-color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 /* navbar stylings */
@@ -100,12 +102,17 @@ body {
   color: #666;
 }
 
-#credit {
+.credit {
   font-size: 0.8375rem;
   line-height: 1.25rem;
   color: #888;
   letter-spacing: 0.01em;
   padding-bottom: 50px;
+}
+
+.date {
+  margin-right: auto;
+  margin-left: 340px;
 }
 
 /* Main Content */
@@ -130,7 +137,242 @@ body {
   line-height: 1.875rem;
   font-size: nyt-imperial,georgia,'times new roman',times,serif;
   width: 600px;
-  margin-bottom: 15px;
   font-weight: 700;
 
+}
+
+/* The Theory of Inflation Graphic Styling  */
+.graphic-container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inflation-grid {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+}
+
+.inf-item {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-content: center;
+}
+
+.inf-image {
+  /* width: 200px;
+  height: 150px; */
+  object-fit: cover;
+}
+
+.inf-text {
+  font-size: 11px;
+  line-height: 17px;
+  font-weight: 300;
+  color: black;
+}
+
+strong {
+  font-size: 14px;
+  font-weight: bolder;
+  color: black;
+}
+
+.graphic-divider {
+  width: 60px;
+  float: left;
+}
+
+.graphic-credit {
+  color: black;
+  font-weight: 300;
+  float: left;
+}
+
+/* Stanford Professor Embedded Youtube Video */
+
+.stanford-vid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-credit {
+  margin-left: 170px;
+  margin-top: 2px;
+}
+
+.tele-image {
+  width: 600px;
+  height: 400px;
+}
+
+.tele-description {
+  width: 600px;
+}
+
+/* Version info at the bottom of the article  */
+.version-info {
+  width: 600px;
+}
+
+.comments-btn {
+  width: 328px;
+  height: 35px;
+  background-color: #567b95;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/* Bottom dividers */
+
+.bottom-line-one{
+  display: inline-block;
+  width: 900px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: .1px;
+  
+}
+
+.bottom-line-two {
+  display: inline-block;
+  width: 255px;
+  height: .1px;
+}
+
+/* Suggested newsletter section  */
+
+.suggested-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.suggested {
+  margin-left: 40px;
+}
+
+.dont-show {
+  margin-left: 450px;
+  margin-right: 30px;
+  width: 350px;
+}
+
+/* Actual article section with thumbnails */
+
+.suggested-articles {
+  display: grid;
+  width: 900px;
+  margin-left: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 7fr 1fr 7fr;
+  grid-column-gap: 20px;
+}
+
+.most-popular {
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+  float: right;
+  clear: none;
+  margin-right: 40px;
+  justify-content: left;
+}
+
+.pop-line {
+  color: #e9e9e9;
+}
+
+.popular-item {
+  font-size: 1.1875;
+  line-height: 1.4375rem;
+  font-weight: 500;
+  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+}
+
+.newsletter-item {
+  border: 1px solid #e2e2e2;
+  height: 250px;
+}
+
+.newsletter-plus {
+  width: 50px;
+  height: 60px;
+  float: right;
+  clear: none;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.news-image {
+  width: 80px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.news-desc {
+  margin-left: 15px;
+  margin-top: 5px;
+  padding: 0;
+  font-size: 12px;
+}
+
+.news-sub {
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.news-body {
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.news-link {
+  margin-bottom: 0;
+  font-size: 15px;
+  color: #326891;
+  font-weight: bold;
+}
+
+.news-line {
+  width: 100%;
+  height: .1px;
+  background-color: black;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: block;
+}
+
+.more {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: block;
+  margin-top: 12px;
+  margin: 10px;
+}
+
+.article-item {
+  height: 300px;
+
+}
+
+.article-image {
+  width: 270px;
+  height: 180px;
+}
+
+.article-title-small {
+  width: 280px;
 }
